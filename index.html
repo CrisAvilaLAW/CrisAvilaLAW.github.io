@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <title>Validaciones</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <body>
+    <header>
+      <h1>Formulario</h1>
+    </header>
+    <form action="javascript:formulariO()">
+      <p><label>Boleta<br><input id="jBoleta" type="text"></label></p>
+      <p><label>Nombre<br><input id="jNombre" type="text"></label></p>
+      <p><label>Grupo<br><input id="jGrupo" type="text"></label></p>
+      <p><label>Materia<br><input id="jMateria" type="text"></label></p>
+      <p><label>Fecha<br><input id="jFecha" type="date"></label></p>
+      <p><button>Enviar</button></p>
+      <br>
+      <p><output id="outSalida"></output></p>
+    </form>
+    <footer><p><br>Copyright &copy; 2021 Valier Avila Cristopher</p></footer>
+    <script>
+     function formulariO(){
+          var boleta = jBoleta.value;
+          var nombre = jNombre.value;
+          var grupo = jGrupo.value;
+          var materia = jMateria.value;
+          var fecha = jFecha.value;
+        var resultado;
+        resultado="Boleta: "+boleta+"\n"+"Nombre: "+nombre+"\n"+"Grupo: "+grupo+"\n"+"Materia: "+materia+"\n"+"Fecha: "+fecha;
+          outSalida.value = resultado;
+     }
+    </script>
+  </body>
+</html>
