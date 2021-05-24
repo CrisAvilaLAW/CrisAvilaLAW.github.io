@@ -13,7 +13,9 @@ formulario.onclick = function(){
     grupo = forma["jgrupo"].value,
     materia = forma["jmateria"].value,
     fecha = forma["jfecha"].value;
-    var resultado;
-    resultado="Boleta: "+boleta+"\n"+" Nombre: "+nombre+"\n"+" Grupo: "+grupo+"\n"+" Materia: "+materia+"\n"+" Fecha: "+fecha;
-    salidaDatos.textContent = resultado;  
+    salidaBoleta.textContent ="Boleta: "+boleta;  
+    salidaNombre.textContent ="Nombre": "+nombre;  
+    salidaGrupo.textContent ="Grupo: "+grupo; 
+    salidaMateria.textContent ="Materia: "+materia;  
+    salidaFecha.textContent ="Fecha: "+fecha;  
 }
