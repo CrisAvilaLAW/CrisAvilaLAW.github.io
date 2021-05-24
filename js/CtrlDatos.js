@@ -1,7 +1,11 @@
 "use strict";
 var formulario = document.getElementById("formulario");
 var forma = document.getElementById("forma"),
-    salidaDatos = document.getElementById("salidaDatos");
+    salidaBoleta = document.getElementById("salidaBoleta"),
+    salidaNombre = document.getElementById("salidaNombre"),
+    salidaGrupo = document.getElementById("salidaGrupo"),
+    salidaMateria = document.getElementById("salidaMateria"),
+    salidaFecha = document.getElementById("salidaFecha");
     
 formulario.onclick = function(){
     var boleta = forma["jboleta"].value,
